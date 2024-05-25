@@ -1,0 +1,35 @@
+.home {
+    position: relative;
+    top: var(--header-height);
+}
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(80%, 1600px);
+    margin: auto;
+}
+.home-main {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 20px;
+}
+.home-title {
+    color: var(--blanco);
+    font-weight: 700;
+    font-size: 50px;
+}
+.home-subtitle {
+    color: var(--gris);
+    font-weight: 500;
+    font-size: 18px;
+    width: 80%;
+}
+.home-container img {
+    position: relative;
+    top: -99px;
+    right: -190px;
+    z-index: -1;
+    width: 50%;
+}
