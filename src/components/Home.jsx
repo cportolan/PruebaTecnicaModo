@@ -10,7 +10,7 @@ export default function Home() {
                     <h3 className='home-subtitle'>We strongly believe that communication, trust and transparency are the essential elements of successful business relationship. <br />Ready for the journey?</h3>
                     <div className="home-main_btns">
                         <a href="#about" className='home-btn_1'>Learn more</a>
-                        <a href='#case-studies' className='home-btn_2'>Our Projects</a>
+                        <a href='#case-studies' className='home-btn_2'>Our Projects<i className="fa-solid fa-arrow-right-long"></i></a>
                     </div>
                 </main>
                 <img src={homeImg} alt="Home IMG" />
