@@ -1,0 +1,37 @@
+.tech {
+    background-color: var(--azul-claro);
+}
+.tech-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: min(80%, 1600px);
+    margin: auto;
+    padding: 300px 0 100px 0;
+}
+.tech-main {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 50%;
+}
+.tech-title {
+    font-size: 30px;
+    color: var(--blanco);
+    font-weight: 500;
+}
+.tech-subtitle {
+    font-size: 18px;
+    width: 75%;
+    color: var(--gris);
+    line-height: 30px;
+}
+.tech-svgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+    margin-right: 150px;
+
+    & img {width: 90px;}
+}

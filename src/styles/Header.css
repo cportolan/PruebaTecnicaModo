@@ -2,6 +2,10 @@
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1;
+}
+.header.scrolled {
+    backdrop-filter: blur(40px);
 }
 .header-container {
     display: flex;

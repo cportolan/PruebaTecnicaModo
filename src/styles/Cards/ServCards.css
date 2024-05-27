@@ -1,0 +1,48 @@
+.servcard {
+    flex: 1;
+    background-color: var(--blanco);
+    border-radius: 3px;
+    width: auto;
+}
+.servcard-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: auto;
+    gap: 20px;
+    padding: 50px 0;
+}
+.servcard-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-claro);
+    border-radius: 50%;
+    width: max-content;
+    height: max-content;
+}
+.servcard-svg {
+    position: relative;
+    width: 40px;
+    margin: 15px;
+}
+.servcard-title {
+    text-align: center;
+    font-size: 20px;
+    color: var(--negro);
+}
+.servcard-text {
+    text-align: center;
+    color: #909090;
+    line-height: 25px;
+}
+.servcard-link {
+    color: #909090;
+    padding: 10px 30px;
+    border: 2px solid #909090;
+    border-radius: 5px;
+    transition: all .2s;
+    margin: 20px 0 10px 0;
+}

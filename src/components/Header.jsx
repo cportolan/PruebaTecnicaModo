@@ -4,11 +4,18 @@ import { useState, useEffect } from 'react';
 export default function Header() {
     const links = ['Home', 'Services', 'Technology', 'Case studies', 'About'];
     const [activeSection, setActiveSection] = useState("");
+    const [scrolled, setScrolled] = useState(false);
+    let currentSection = '';
 
     useEffect(() => {
         const handleScroll = () => {
             const sections = document.querySelectorAll('section');
-            let currentSection = '';
+            
+            if (window.scrollY > 0) {
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
 
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
@@ -23,20 +30,31 @@ export default function Header() {
         window.addEventListener("scroll", handleScroll);
 
         return () => {
+            console.log(currentSection);
             window.removeEventListener("scroll", handleScroll);
         };
     }, []);
 
     return(
-        <header className="header">
+        <header className={scrolled ? 'header scrolled' : 'header'}>
             <div className="header-container">
                 <a className='header-logo' href="#home">compleet labs</a>
                 <nav className="header-navbar">
-                    <ul>{links.map((link, index) => (
-                        <li key={index}>
-                            <a href={`#${link.toLowerCase().replace(/ /g, '-')}`}>{link}</a>
-                        </li>
-                    ))}</ul>
+                    <ul>
+                    {links.map((link, index) => {
+                            const linkId = link.toLowerCase().replace(/ /g, '-');
+                            return (
+                                <li key={index}>
+                                    <a 
+                                        href={`#${linkId}`} 
+                                        className={activeSection === linkId ? 'active' : ''}
+                                    >
+                                        {link}
+                                    </a>
+                                </li>
+                            );
+                        })}
+                    </ul>
                     <a className='header-contact' href="#contact">Hire Us</a>
                 </nav>
             </div>

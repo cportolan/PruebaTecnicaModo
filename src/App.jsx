@@ -1,6 +1,7 @@
 import Header from './components/Header'
 import Home from './components/Home'
 import Services from './components/Services'
+import Technology from './components/Technology'
 
 export default function App() {
   return(
@@ -8,6 +9,7 @@ export default function App() {
       <Header />
       <Home />
       <Services />
+      <Technology />
     </div>
   )
 }

@@ -2,6 +2,7 @@
 
 * ¿Qué es este desafío?
 Es una prueba para que entendamos cómo pensás, tu nivel de seniority en web dev, y ensayar cómo sería trabajar juntos.
+- Link: https://domofrontendchallenge.netlify.app/challenge
 
 * ¿En qué consiste?
 Tenés que maquetar una página de one page a partir de una imagen que te entregamos.
