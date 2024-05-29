@@ -6,11 +6,11 @@ export default function Footer() {
             <div className="footer-container">
                 <div className="footer-left">
                     <h2>compleet labs</h2>
-                    <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Donec ullampcorper nulla.</p>
+                    <p>Acá dejo mis redes sociales, esero que te haya gustado la prueba técnica, si me quieres enviar un mensaje contáctame!</p>
                     <div className="footer-socialmedia">
-                        <i className="fa-brands fa-twitter"></i>
-                        <i className="fa-brands fa-facebook"></i>
-                        <i className="fa-brands fa-instagram"></i>
+                        <a href="https://instagram.com/cristianportolan" target='_blank'><i className="fa-brands fa-instagram"></i></a>
+                        <a href="https://linkedin.com/in/cristian-portolan" target='_blank'><i className="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/cportolan/" target='_blank'><i className="fa-brands fa-github"></i></a>
                     </div>
                 </div>
                 <div className="footer-right">
