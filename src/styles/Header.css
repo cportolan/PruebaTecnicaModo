@@ -8,6 +8,9 @@
     background-color: var(--azul-oscuro);
     box-shadow: .5px .5px 5px var(--azul-oscuro);
 }
+#header-hamburguer {
+    display: none;
+}
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -53,4 +56,32 @@
 .header-contact:hover {
     background-color: #205fff;
     transform: translateY(-2px);
+}
+
+@media screen and (max-width: 1100px) {
+    header {background-color: var(--azul-oscuro);}
+    .header-container {width: 90%;}
+    #header-hamburguer {display: block;}
+    .header-navbar {
+        height: 0px;
+        position: fixed;
+        z-index: 20;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        width: 100vw;
+        transition: 0.3s ease-in;
+        background-color: var(--azul-oscuro);
+        overflow: hidden;
+        box-shadow: 0 1px 10px 3px var(--azul-oscuro);
+        filter: opacity(.99);
+    }
+    .header-navbar, .header-navbar ul {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .active {
+        height: 450px;
+    }
 }

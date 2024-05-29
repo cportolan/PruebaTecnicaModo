@@ -1,5 +1,6 @@
 import '../styles/Header.css'
 import { useState, useEffect } from 'react';
+import { Fade as Menu } from 'hamburger-react';
 
 export default function Header() {
     const links = ['Home', 'Services', 'Technology', 'Case studies', 'About'];
@@ -11,6 +12,7 @@ export default function Header() {
     const toggleMenu = () => {
         setOpen(!menuOpen);
         setActive(!active);
+        console.log("Togled")
     }
 
     useEffect(() => {
@@ -45,7 +47,8 @@ export default function Header() {
         <header className={scrolled ? 'header scrolled' : 'header'}>
             <div className="header-container">
                 <a className='header-logo' href="#home">compleet labs</a>
-                <nav className="header-navbar">
+                <div id="header-hamburguer" onClick={toggleMenu}><Menu toggled={menuOpen} toggle={setOpen} rounded direction='right' color='#fdfdfd' /></div>
+                <nav className={active ? 'header-navbar active' : 'header-navbar'}>
                     <ul>
                     {links.map((link, index) => {
                             const linkId = link.toLowerCase().replace(/ /g, '-');
@@ -54,6 +57,7 @@ export default function Header() {
                                     <a 
                                         href={`#${linkId}`} 
                                         className={activeSection === linkId ? 'active' : ''}
+                                        onClick={toggleMenu}
                                     >
                                         {link}
                                     </a>
