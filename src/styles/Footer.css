@@ -60,3 +60,24 @@
     
     & a {color: var(--gris);}
 }
+
+@media screen and (max-width: 1100px) {
+    .footer-container {
+        flex-direction: column;
+        width: 90%;
+        padding: 150px 0 0;
+        gap: 100px;
+    }
+    .footer-left, .footer-right {
+        justify-content: center;
+        width: 100%;
+    }
+    .footer-left {
+        text-align: center;
+        align-items: center;
+    }
+    .footer-socialmedia {
+        gap: 40px;
+        & i {font-size: 25px;}
+    }
+}

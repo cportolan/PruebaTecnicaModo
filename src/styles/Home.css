@@ -73,14 +73,43 @@
     .home-container {
         width: 90%; 
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-        height: auto;
-        padding: 100px 0;
+        padding: 40px 0px;
+    }
+    .home-main {
+        width: 100%;
+        padding-top: 150px;
+        align-items: center;
+        text-align: center;
+    }
+    .home-container img {
+        height: 90vh;
     }
 }
 @media screen and (max-width: 768px) {
+    .home-container {
+        height: 100vh;
+    }
+    .home-container img {
+        filter: opacity(.25);
+    }
+    .home-main {
+        align-items: center;
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+    }
     .home-title {
-        font-size: 30px;
+        font-size: 45px;
+    }
+    .home-btn_1, .home-btn_2 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .home-main_btns {
+        flex-direction: column-reverse;
     }
 }

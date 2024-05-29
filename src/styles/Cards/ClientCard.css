@@ -32,3 +32,9 @@
     cursor: pointer;
     margin-top: 15px;
 }
+@media screen and (max-width: 1100px) {
+    .clientcard-container {
+        text-align: center;
+        align-items: center;
+    }
+}

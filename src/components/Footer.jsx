@@ -2,7 +2,7 @@ import '../styles/Footer.css'
 
 export default function Footer() {
     return(
-        <footer className="footer">
+        <footer className="footer" id='about'>
             <div className="footer-container">
                 <div className="footer-left">
                     <h2>compleet labs</h2>
