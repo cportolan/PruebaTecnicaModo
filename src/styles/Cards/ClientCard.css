@@ -1,0 +1,34 @@
+.clientcard {
+    flex: 1;
+    background-color: var(--azul-claro);
+    border-radius: 3px;
+    width: auto;
+}
+.clientcard-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    width: 90%;
+    margin: auto;
+    padding: 40px 0;
+}
+.clientcard-title {
+    color: var(--blanco);
+    font-size: 40px;
+    font-weight: 500;
+}
+.clientcard-text {
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--gris);
+    width: 65%;
+}
+.clientcard-button {
+    background-color: transparent;
+    color: var(--blanco);
+    border: 2px solid var(--gris);
+    padding: 12px 35px;
+    width: fit-content;
+    cursor: pointer;
+    margin-top: 15px;
+}

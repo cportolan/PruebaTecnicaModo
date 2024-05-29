@@ -1,3 +1,5 @@
+import Clients from './components/Clients'
+import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './components/Home'
 import Services from './components/Services'
@@ -10,6 +12,8 @@ export default function App() {
       <Home />
       <Services />
       <Technology />
+      <Clients />
+      <Footer />
     </div>
   )
 }

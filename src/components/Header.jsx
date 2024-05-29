@@ -6,6 +6,12 @@ export default function Header() {
     const [activeSection, setActiveSection] = useState("");
     const [scrolled, setScrolled] = useState(false);
     let currentSection = '';
+    const [menuOpen, setOpen] = useState(false);
+    const [active, setActive] = useState(false);
+    const toggleMenu = () => {
+        setOpen(!menuOpen);
+        setActive(!active);
+    }
 
     useEffect(() => {
         const handleScroll = () => {
